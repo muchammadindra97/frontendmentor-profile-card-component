@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background-attachment: fixed;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-position: left -5vw top -50vh, right -5vw bottom -50vh;
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.avatar {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin: -53px auto 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5px;
+  /* position: absolute;
+  bottom: 0; */
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  border-radius: 15px 15px 15px 15px;
+  height: 375px;
+  width: 350px;
+  box-shadow: 0px 0px 75px 25px rgba(3, 3, 3, 0.1);
+}
+
+.card-top {
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 15px 15px 0 0;
+  height: 37%;
+}
+
+.card-middle {
+  border-bottom: solid 1px hsl(0, 0%, 92%);
+  background-color: white;
+  box-shadow: 0px -5px 10px -3px rgba(3, 3, 3, 0.1);
+  height: 38%;
+  text-align: center;
+}
+
+.card-bottom {
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.age {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.location {
+  color: hsl(227, 10%, 46%);
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.stats {
+  width: 25%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stats-value {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stats-name {
+  display: block;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-position: left -50vh top -40vh, right -50vh bottom -40vh;
+    background-size: 150vw;
+  }
+}
